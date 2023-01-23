@@ -21,10 +21,10 @@ $colors: (
     "white": white,
 );
 
-@debug map-get($map: $colors, $key: "purple");
-@debug map-has-key($map: $colors, $key: "secondary");
-@debug map-remove($map: $colors, $key: "primary");
-@debug map-merge($map1: $colors, $map2: ("primary": $primary, ));
+// @debug map-get($map: $colors, $key: "purple");
+// @debug map-has-key($map: $colors, $key: "secondary");
+// @debug map-remove($map: $colors, $key: "primary");
+// @debug map-merge($map1: $colors, $map2: ("primary": $primary, ));
 
 
 //spacing
