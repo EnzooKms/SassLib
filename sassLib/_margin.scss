@@ -1,0 +1,21 @@
+$mps: ('right': 'r', 'left': 'l', 'top': 't', 'bottom': 'b');
+
+@for $i from 1 through 20 {
+    .m-#{$i} {
+        margin: #{$i}px;
+    }
+
+    .p-#{$i} {
+        padding: #{$i}px;
+    }
+
+    @each $property, $mp in $mps {
+        .m#{$mp}-#{$i} {
+            margin-#{$property}: #{$i}px;
+        }
+
+        .p#{$mp}-#{$i} {
+            padding-#{$property}: #{$i}px;
+        }
+    }
+}
