@@ -19,34 +19,34 @@ $val in $colors {
         //light variation
         @for $i from 1 through 9 {
             .text-#{$key}-light-#{$i} {
-                color: mix(white, $val, $i * 10);
+                color: color-mix(white, $val, $i * 10);
             }
 
             .text-hover-#{$key}-light-#{$i} {
                 &:hover {
-                    color: mix(white, $val, $i * 10);
+                    color: color-mix(white, $val, $i * 10);
                 }
             }
 
             .bg-#{$key}-light-#{$i} {
-                background-color: mix(white, $val, $i * 10);
+                background-color: color-mix(white, $val, $i * 10);
             }
         }
 
         //dark variation
         @for $i from 1 through 9 {
             .text-#{$key}-dark-#{$i} {
-                color: mix(black, $val, $i * 10);
+                color: color-mix(black, $val, $i * 10);
             }
 
             .text-hover-#{$key}-dark-#{$i} {
                 &:hover {
-                    color: mix(black, $val, $i * 10);
+                    color: color-mix(black, $val, $i * 10);
                 }
             }
 
             .bg-#{$key}-dark-#{$i} {
-                background-color: mix(black, $val, $i * 10);
+                background-color: color-mix(black, $val, $i * 10);
             }
         }
     }
