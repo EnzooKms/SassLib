@@ -1,0 +1,11 @@
+$justify: 'center', 'start', 'end', 'flex-start', 'flex-end', 'left', 'right', 'space-around', 'space-between', 'space-evenly', 'baseline', 'stretch', 'safe';
+
+.flex {
+    display: flex;
+}
+
+@each $values in $justify {
+    .justify--#{$values} {
+        justify-content: $values;
+    }
+}
